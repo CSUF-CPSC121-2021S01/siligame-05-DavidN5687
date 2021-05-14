@@ -7,6 +7,7 @@
 class Opponent : public GameElement {
  private:
   int FireRate_ = 0;
+
  public:
   Opponent(int x, int y) : GameElement(x, y, 50, 50) {}
   Opponent() {}

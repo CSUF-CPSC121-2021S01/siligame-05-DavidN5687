@@ -24,7 +24,7 @@ void Game::UpdateScreen() {
   if (Player_.GetIsActive()) {
     Player_.Draw(GameScreen_);
   } else {
-    GameScreen_.DrawText(300, 300, "Game Over", 35, 0, 0, 0);
+    GameScreen_.DrawText(10, 10, "Game Over", 35, 0, 0, 0);
   }
 
   for (int i = 0; i < Opponent_.size(); i++) {

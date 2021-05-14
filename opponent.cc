@@ -48,7 +48,7 @@ void OpponentProjectile::Move(const graphics::Image &image) {
 
 // LaunchProjectile Function
 std::unique_ptr<class OpponentProjectile> Opponent::LaunchProjectile() {
-  if (FireRate_ >= 160) {
+  if (FireRate_ >= 50) {
     FireRate_ = 0;
     std::unique_ptr<OpponentProjectile> pea;
     pea = std::make_unique<OpponentProjectile>();

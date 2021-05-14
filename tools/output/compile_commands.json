@@ -1,0 +1,27 @@
+[
+ {
+ "directory" : "/home/david/Projects/siligame-05-DavidN5687",
+ "command" : "clang++ -std=c++17 main.cc -o main",
+ "file" : "/home/david/Projects/siligame-05-DavidN5687/main.cc"
+ },
+ {
+ "directory" : "/home/david/Projects/siligame-05-DavidN5687",
+ "command" : "clang++ -std=c++17 player.cc -o main",
+ "file" : "/home/david/Projects/siligame-05-DavidN5687/player.cc"
+ },
+ {
+ "directory" : "/home/david/Projects/siligame-05-DavidN5687",
+ "command" : "clang++ -std=c++17 opponent.cc -o main",
+ "file" : "/home/david/Projects/siligame-05-DavidN5687/opponent.cc"
+ },
+ {
+ "directory" : "/home/david/Projects/siligame-05-DavidN5687",
+ "command" : "clang++ -std=c++17 game_element.cc -o main",
+ "file" : "/home/david/Projects/siligame-05-DavidN5687/game_element.cc"
+ },
+ {
+ "directory" : "/home/david/Projects/siligame-05-DavidN5687",
+ "command" : "clang++ -std=c++17 game.cc -o main",
+ "file" : "/home/david/Projects/siligame-05-DavidN5687/game.cc"
+ },
+]
