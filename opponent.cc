@@ -5,7 +5,7 @@
 
 #include "cpputils/graphics/image.h"
 
-// Draw Function
+// Draw Opponent
 
 void Opponent::Draw(graphics::Image &image) {
   graphics::Image imageO;
@@ -29,6 +29,8 @@ void OpponentProjectile::Draw(graphics::Image &image) {
   }
 }
 
+// Move Functions
+
 void Opponent::Move(const graphics::Image &image) {
   SetY(GetY() + 1);
   SetX(GetX() + 1);
@@ -41,5 +43,18 @@ void OpponentProjectile::Move(const graphics::Image &image) {
   SetY(GetY() + 3);
   if (IsOutOfBounds(image)) {
     OpponentProjectile::SetIsActive(false);
+  }
+}
+
+// LaunchProjectile Function
+std::unique_ptr<class OpponentProjectile> Opponent::LaunchProjectile() {
+  if (FireRate_ >= 160) {
+    FireRate_ = 0;
+    std::unique_ptr<OpponentProjectile> pea;
+    pea = std::make_unique<OpponentProjectile>();
+    return std::move(pea);
+  } else {
+    FireRate_++;
+    return nullptr;
   }
 }

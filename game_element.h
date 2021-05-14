@@ -38,7 +38,7 @@ class GameElement {
 
   // functions
 
-  bool IntersectsWith(const GameElement &universal);
+  bool IntersectsWith(GameElement *universal);
 
   bool IsOutOfBounds(const graphics::Image &universal);
 
